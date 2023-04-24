@@ -7,23 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F1E77E0298ED3DB0051C62D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E77DF298ED3DB0051C62D /* AppDelegate.m */; };
-		8F1E77E3298ED3DB0051C62D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E77E2298ED3DB0051C62D /* ViewController.m */; };
-		8F1E77E5298ED3DD0051C62D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1E77E4298ED3DD0051C62D /* Assets.xcassets */; };
-		8F1E77E8298ED3DD0051C62D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1E77E6298ED3DD0051C62D /* Main.storyboard */; };
-		8F1E77EA298ED3DD0051C62D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E77E9298ED3DD0051C62D /* main.m */; };
+		8F1E77F3298ED4B60051C62D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E77F2298ED4B60051C62D /* main.c */; };
+		8F1E77FB298ED4C90051C62D /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77F5298ED4C80051C62D /* SDL2_ttf.framework */; };
+		8F1E77FC298ED4C90051C62D /* SDL2_ttf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77F5298ED4C80051C62D /* SDL2_ttf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F1E77FD298ED4C90051C62D /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77F6298ED4C80051C62D /* SDL2_image.framework */; };
+		8F1E77FE298ED4C90051C62D /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77F6298ED4C80051C62D /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F1E77FF298ED4CA0051C62D /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77F7298ED4C80051C62D /* SDL2.framework */; };
+		8F1E7800298ED4CA0051C62D /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77F7298ED4C80051C62D /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F1E7801298ED4CA0051C62D /* sdl2_gfx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77F8298ED4C80051C62D /* sdl2_gfx.framework */; };
+		8F1E7802298ED4CB0051C62D /* sdl2_gfx.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77F8298ED4C80051C62D /* sdl2_gfx.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F1E7803298ED4CB0051C62D /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77F9298ED4C90051C62D /* SDL2_mixer.framework */; };
+		8F1E7804298ED4CB0051C62D /* SDL2_mixer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77F9298ED4C90051C62D /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F1E7805298ED4CC0051C62D /* SDL2_net.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77FA298ED4C90051C62D /* SDL2_net.framework */; };
+		8F1E7806298ED4CC0051C62D /* SDL2_net.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1E77FA298ED4C90051C62D /* SDL2_net.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F1E7809298F07D90051C62D /* tileset.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1E7808298F07D90051C62D /* tileset.png */; };
+		8FEEA7702990FE690080A71F /* archer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FEEA76F2990FE690080A71F /* archer.jpg */; };
+		8FEEA79E2992E22E0080A71F /* map_loader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEEA7962992D1800080A71F /* map_loader.framework */; };
+		8FEEA79F2992E22E0080A71F /* map_loader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEEA7962992D1800080A71F /* map_loader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F1E7807298ED4CD0051C62D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F1E7800298ED4CA0051C62D /* SDL2.framework in Embed Frameworks */,
+				8F1E7804298ED4CB0051C62D /* SDL2_mixer.framework in Embed Frameworks */,
+				8F1E77FC298ED4C90051C62D /* SDL2_ttf.framework in Embed Frameworks */,
+				8F1E77FE298ED4C90051C62D /* SDL2_image.framework in Embed Frameworks */,
+				8FEEA79F2992E22E0080A71F /* map_loader.framework in Embed Frameworks */,
+				8F1E7802298ED4CB0051C62D /* sdl2_gfx.framework in Embed Frameworks */,
+				8F1E7806298ED4CC0051C62D /* SDL2_net.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8F1E77DB298ED3DB0051C62D /* Infinity Stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infinity Stone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F1E77DE298ED3DB0051C62D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8F1E77DF298ED3DB0051C62D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8F1E77E1298ED3DB0051C62D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8F1E77E2298ED3DB0051C62D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8F1E77E4298ED3DD0051C62D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8F1E77E7298ED3DD0051C62D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8F1E77E9298ED3DD0051C62D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F1E77EB298ED3DD0051C62D /* Infinity_Stone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Infinity_Stone.entitlements; sourceTree = "<group>"; };
+		8F1E77F2298ED4B60051C62D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8F1E77F5298ED4C80051C62D /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		8F1E77F6298ED4C80051C62D /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		8F1E77F7298ED4C80051C62D /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		8F1E77F8298ED4C80051C62D /* sdl2_gfx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sdl2_gfx.framework; path = ../../../../Library/Frameworks/sdl2_gfx.framework; sourceTree = "<group>"; };
+		8F1E77F9298ED4C90051C62D /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		8F1E77FA298ED4C90051C62D /* SDL2_net.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_net.framework; path = ../../../../Library/Frameworks/SDL2_net.framework; sourceTree = "<group>"; };
+		8F1E7808298F07D90051C62D /* tileset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tileset.png; path = ../../../Downloads/0x72_DungeonTilesetII_v1.3.1/tileset.png; sourceTree = "<group>"; };
+		8F660BF1298FE47A008CC246 /* tmx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tmx.framework; path = ../../../../Library/Frameworks/tmx.framework; sourceTree = "<group>"; };
+		8FEEA76F2990FE690080A71F /* archer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = archer.jpg; path = ../../archer.jpg; sourceTree = "<group>"; };
+		8FEEA7712990FFD20080A71F /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		8FEEA7962992D1800080A71F /* map_loader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = map_loader.framework; path = ../../../../Library/Frameworks/map_loader.framework; sourceTree = "<group>"; };
+		8FEEA7A029A1C51A0080A71F /* todo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = todo.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +69,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1E77FF298ED4CA0051C62D /* SDL2.framework in Frameworks */,
+				8F1E7803298ED4CB0051C62D /* SDL2_mixer.framework in Frameworks */,
+				8F1E77FB298ED4C90051C62D /* SDL2_ttf.framework in Frameworks */,
+				8F1E77FD298ED4C90051C62D /* SDL2_image.framework in Frameworks */,
+				8FEEA79E2992E22E0080A71F /* map_loader.framework in Frameworks */,
+				8F1E7801298ED4CA0051C62D /* sdl2_gfx.framework in Frameworks */,
+				8F1E7805298ED4CC0051C62D /* SDL2_net.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +87,7 @@
 			children = (
 				8F1E77DD298ED3DB0051C62D /* Infinity Stone */,
 				8F1E77DC298ED3DB0051C62D /* Products */,
+				8F1E77F4298ED4C80051C62D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,16 +102,29 @@
 		8F1E77DD298ED3DB0051C62D /* Infinity Stone */ = {
 			isa = PBXGroup;
 			children = (
-				8F1E77DE298ED3DB0051C62D /* AppDelegate.h */,
-				8F1E77DF298ED3DB0051C62D /* AppDelegate.m */,
-				8F1E77E1298ED3DB0051C62D /* ViewController.h */,
-				8F1E77E2298ED3DB0051C62D /* ViewController.m */,
-				8F1E77E4298ED3DD0051C62D /* Assets.xcassets */,
-				8F1E77E6298ED3DD0051C62D /* Main.storyboard */,
-				8F1E77E9298ED3DD0051C62D /* main.m */,
 				8F1E77EB298ED3DD0051C62D /* Infinity_Stone.entitlements */,
+				8F1E7808298F07D90051C62D /* tileset.png */,
+				8FEEA76F2990FE690080A71F /* archer.jpg */,
+				8F1E77F2298ED4B60051C62D /* main.c */,
+				8FEEA7712990FFD20080A71F /* main.h */,
+				8FEEA7A029A1C51A0080A71F /* todo.md */,
 			);
 			path = "Infinity Stone";
+			sourceTree = "<group>";
+		};
+		8F1E77F4298ED4C80051C62D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FEEA7962992D1800080A71F /* map_loader.framework */,
+				8F660BF1298FE47A008CC246 /* tmx.framework */,
+				8F1E77F8298ED4C80051C62D /* sdl2_gfx.framework */,
+				8F1E77F6298ED4C80051C62D /* SDL2_image.framework */,
+				8F1E77F9298ED4C90051C62D /* SDL2_mixer.framework */,
+				8F1E77FA298ED4C90051C62D /* SDL2_net.framework */,
+				8F1E77F5298ED4C80051C62D /* SDL2_ttf.framework */,
+				8F1E77F7298ED4C80051C62D /* SDL2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +137,7 @@
 				8F1E77D7298ED3DB0051C62D /* Sources */,
 				8F1E77D8298ED3DB0051C62D /* Frameworks */,
 				8F1E77D9298ED3DB0051C62D /* Resources */,
+				8F1E7807298ED4CD0051C62D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,8 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F1E77E5298ED3DD0051C62D /* Assets.xcassets in Resources */,
-				8F1E77E8298ED3DD0051C62D /* Main.storyboard in Resources */,
+				8FEEA7702990FE690080A71F /* archer.jpg in Resources */,
+				8F1E7809298F07D90051C62D /* tileset.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,24 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F1E77E3298ED3DB0051C62D /* ViewController.m in Sources */,
-				8F1E77EA298ED3DD0051C62D /* main.m in Sources */,
-				8F1E77E0298ED3DB0051C62D /* AppDelegate.m in Sources */,
+				8F1E77F3298ED4B60051C62D /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8F1E77E6298ED3DD0051C62D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F1E77E7298ED3DD0051C62D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8F1E77EC298ED3DD0051C62D /* Debug */ = {
@@ -196,7 +243,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -277,6 +324,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 42V3NSBR6A;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -303,6 +354,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 42V3NSBR6A;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
